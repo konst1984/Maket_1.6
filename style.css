@@ -391,12 +391,12 @@ button{
     align-self: start;
 }
 
-.grid-text--service{
+.grid-item__title{
     font-size: 16px;
     letter-spacing: -0.3px;
     font-weight: 600;
 }
-.btn__service{
+.btn-service{
     align-self: end;
 }
 
@@ -479,7 +479,7 @@ button{
     padding:17px 0;
 }
 
-.btn__service {
+.btn-service {
     top:2px;
 }
 
@@ -577,7 +577,7 @@ button{
     border-radius: 6px;
 }
 
-.price-item__text--swiper,
+.price-item__text-swiper,
 .price__column-title--swiper,
 .price-item__btn--swiper{
     padding: 0;
@@ -1066,7 +1066,7 @@ input:invalid {
     .grid-item--type{
         padding-bottom: 19px;
     }
-    .btn__service {
+    .btn-service {
         top: -4px;
         left: 1px;
     }
