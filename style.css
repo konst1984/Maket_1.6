@@ -158,9 +158,9 @@ button{
 .repair-status__text{
     display: none;
 }
-.nav{
-    overflow: scroll;
-}
+/*.nav{*/
+/*    overflow: scroll;*/
+/*}*/
 .wrapper-padding--nav{
     padding-left: 14px;
 }
@@ -382,6 +382,10 @@ button{
 .grid-list--types + .swiper{
     height: 190px;
 }
+
+.grid-item--type{
+    padding: 18px 17px 15px 14px;
+}
 .grid-item--type,
 .swiper-slide--type{
     height: 160px;
@@ -404,26 +408,23 @@ button{
 /*Swiper*/
 .swiper {
     display: block;
-    margin-bottom: 28px;
+    margin-bottom: 23px;
     min-height: 102px;
+    padding-bottom: 37px;
     z-index: 0;
 }
-.product-types__wrapper .swiper-wrapper{
-    margin-bottom:32px;
-}
+
 .swiper-pagination{
     display: flex;
     justify-content: center;
     gap: 4px;
-    visibility: hidden;
 }
 
 .swiper-pagination-bullet{
-    position: relative;
     top: 10px;
     width: 12px;
     height: 12px;
-    visibility: visible;
+
 }
 
 .swiper-pagination-bullet-active{
@@ -563,14 +564,14 @@ button{
 
 .price__table-body + .swiper{
     min-height: 230px;
-    margin-bottom: 18px;
+    margin-bottom: 9px;
 }
 .swiper-wrapper--price{
     margin-left: 8px;
 }
 .price-item--swiper{
     gap: 13px;
-    padding: 18px 15px 14px 16px;
+    padding: 18px 16px 16px 16px;
     width: 260px;
     min-height: 200px;
     background: #FFFFFF;
@@ -661,9 +662,11 @@ button{
     padding: 6px 20px;
     color:#1B1C21;
     line-height: 28px;
+    font-weight: 600;
 }
 .nav__link--mobile:focus{
     color:#7E7E82;
+    font-weight: 500;
 }
 
 
