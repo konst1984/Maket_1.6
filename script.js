@@ -32,17 +32,27 @@ document.addEventListener("DOMContentLoaded", () => {
         return item.classList.toggle(className);
     }
 
+    let y = document.querySelector('.btn-more--hero')
+    console.log()
+
     for (let i = 0; i < btnMoreList.length; i++) {
 
             btnMoreList[i].addEventListener('click', function () {
                 let panel = this.previousElementSibling;
 
                 if (panel.clientHeight + 1 >= panel.scrollHeight || panel.clientHeight === 600) {
-                    if( window.innerWidth > 768) {
+                    if( window.innerWidth >= 768) {
                         panel.style.maxHeight = "165px";
-                        panel.style.overflow = "hidden"
-                    }else if ( window.innerWidth < 768){
-                        panel.style.maxHeight = "165px";
+                        panel.style.overflow = "hidden";
+                        if(i===0){
+                            document.querySelector('.content-wrapper').style.gap = "40px";
+                            document.querySelector('.hero-content').style.width = "48%";
+                            heroInfo.style.paddingRight = "10px";
+                            document.querySelector('.hero-info__text').style.paddingRight = "0px";
+                        }
+                    }
+                    else if( window.innerWidth === 320) {
+                        panel.style.maxHeight = "90px";
                         panel.style.overflow = "hidden"
                     }
                     else {
@@ -51,16 +61,29 @@ document.addEventListener("DOMContentLoaded", () => {
                     }
 
                     panel.scrollTop = 0;
-                    (i===0) ? this.innerHTML = '<img class="btn-more__icon" src="images/expand.svg" alt="Двойная стрелка вниз">Читать далее' :
-                        this.innerHTML = '<img class="btn-more__icon" src="images/expand.svg" alt="Двойная стрелка вниз">Показать все';
+
+                    if(i===0) {
+                        this.innerHTML = '<img class="btn-more__icon" src="images/expand.svg" alt="Двойная стрелка вниз">Читать далее'
+                    }
+                    else{
+                        this.innerHTML = '<img class="btn-more__icon" src="images/expand-up.svg" alt="Двойная стрелка вниз">Показать все';
+                    }
+
                 } else {
                     this.innerHTML = ' <img class="btn-more__icon" src="images/expand-up.svg" alt="Двойная стрелка вниз">Скрыть';
                     if(panel.scrollHeight > 600){
                         panel.style.maxHeight = "600px";
                         panel.style.overflow ="auto"
+                        if(i===0 &&  window.innerWidth >= 768){
+                            document.querySelector('.content-wrapper').style.gap = "15px";
+                            document.querySelector('.hero-content').style.width = "51.5%";
+                            heroInfo.style.paddingRight = "0px";
+                            document.querySelector('.hero-info__text').style.paddingRight = "10px";
+                        }
                     }
                     else {
                          panel.style.maxHeight = panel.scrollHeight + "px";
+                         panel.style.overflow = "hidden";
                     }
                 }
             })
@@ -106,10 +129,8 @@ document.addEventListener("DOMContentLoaded", () => {
         displayHidden(backgroundOpacity,'block-opacity');
         displayHidden(elem,'modal-transform');
         displayBlock(elem,'hidden');
-        // setTimeout(() => {elem.style.display = "none"},600);
     }
     function openSection(elem ) {
-        // elem.style.display="block";
         displayBlock(backgroundOpacity,'block-opacity');
         displayHidden(mobileMenu, 'visin');
         setTimeout(() => {
