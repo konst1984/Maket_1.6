@@ -405,7 +405,7 @@ button{
 
 .swiper-brands .swiper-wrapper,
 .swiper-types .swiper-wrapper{
-    flex-wrap:wrap;
+    flex-wrap:nowrap;
     gap:16px;
 }
 
@@ -513,32 +513,48 @@ button{
 .btn-footnote:focus,
 .btn-footnote:hover,
 .btn-footnote:active{
-    outline: none;
-    color:#FFFFFF;
+    outline: 5px solid #FF3E79;
+    color: #FFFFFF;
     background-color: #FF3E79;
 }
 
-.arrow-next.btn--pseudo {
-    padding: 6px 18px 9px 0;
+.arrow-next {
+    max-width: 215px;
+    position: relative;
     align-self: start;
-    bottom: 5px;
-    border-color: transparent;
-    letter-spacing: -0.3px;
-}
-.arrow-next.btn--pseudo:before,
-.arrow-next.btn--pseudo:after{
-    right: -2px;
-    top: 48%;
+    padding-right: 25px;
+    letter-spacing: -0.2px;
+    line-height: 24px;
 }
 
-.arrow-next.btn--pseudo:hover.arrow-next::before,
-.arrow-next.btn--pseudo:hover.arrow-next::after,
-.arrow-next.btn--pseudo:active.arrow-next::before,
-.arrow-next.btn--pseudo:active.arrow-next::after{
+.arrow-next::before,
+.arrow-next::after{
+    content: '';
+    position: absolute;
+    right:95px;
+    top:36px;
+    width: 7px;
+    height: 2px;
+    background-color: #FF3E79;
+    border-radius: 10px;
+}
+
+.arrow-next::before{
+    transform: translateX(-50%) rotate(-45deg) translateY(0px);
+}
+.arrow-next:after {
+    transform: translateX(-50%) rotate(45deg) translate(-3px,-2px );
+}
+
+
+.arrow-next:hover.arrow-next::before,
+.arrow-next:hover.arrow-next::after,
+.arrow-next:active.arrow-next::before,
+.arrow-next:active.arrow-next::after{
     background-color: #FFFFFF;
 }
-.arrow-next.btn--pseudo:hover,
-.arrow-next.btn--pseudo:hover{
+.arrow-next:hover,
+.arrow-next:hover{
     outline: none;
     border:none;
 }
@@ -1152,14 +1168,9 @@ input:invalid {
     .btn-footnote{
         flex-direction: row;
         letter-spacing: -0.4px;
+        gap:4px;
     }
 
-    .arrow-next.btn--pseudo {;
-        right: 0px;
-        padding: 0 20px 0 0;
-        left:3px;
-        top:0;
-    }
 
     .footer__wrapper {
         flex-direction: row;
@@ -1260,6 +1271,7 @@ input:invalid {
 
     .swiper-brands .swiper-wrapper,
     .swiper-types .swiper-wrapper{
+        flex-wrap:wrap;
         column-gap:24px;
     }
 
@@ -1268,9 +1280,14 @@ input:invalid {
     }
 
 
-    .arrow-next.btn--pseudo:before, .arrow-next.btn--pseudo:after {
-        right: 0px;
-        top: 11px;
+    .arrow-next {
+        max-width: none;
+        letter-spacing: -0.4px;
+    }
+    .arrow-next::before,
+    .arrow-next::after{
+        right: 2px;
+        top: 12px;
     }
 }
 
@@ -1505,8 +1522,16 @@ input:invalid {
 
     .price__footnote{
         padding: 0;
+        gap: 14px;
+    }
+    .arrow-next{
+        letter-spacing: -0.3px;
     }
 
+    .arrow-next::before, .arrow-next::after {
+        right: 5px;
+        top: 13px;
+    }
     .footer-text:nth-child(2){
         text-align: start;
     }
@@ -1527,8 +1552,6 @@ input:invalid {
         column-gap:32px;
     }
 }
-
-
 
 
 
