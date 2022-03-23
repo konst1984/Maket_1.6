@@ -1049,7 +1049,6 @@ input:invalid {
         text-align: left;
     }
 
-
     .wrapper-padding {
         padding-right: 22px;
         padding-left: 24px;
@@ -1062,6 +1061,11 @@ input:invalid {
 
     .brands__wrapper {
         padding: 0 24px;
+    }
+
+    .btn-brand{
+        top: -3px;
+        left: 1px;
     }
 
     .price__table-head{
