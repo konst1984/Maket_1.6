@@ -365,7 +365,7 @@ button{
 }
 .grid-item--type,
 .swiper-slide--type{
-    height: 160px;
+    min-height: 160px;
     max-width: 240px;
 }
 .grid-item__name--service{
@@ -405,7 +405,7 @@ button{
 
 .swiper-brands .swiper-wrapper,
 .swiper-types .swiper-wrapper{
-    flex-wrap:nowrap;
+    flex-wrap:wrap;
     gap:16px;
 }
 
