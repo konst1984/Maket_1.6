@@ -348,7 +348,6 @@ button{
     max-width: 240px;
 }
 
-
 .btn__brand{
     top:-2px;
 }
@@ -1262,6 +1261,12 @@ input:invalid {
 
     .swiper-pagination{
         display: none;
+    }
+
+
+    .arrow-next.btn--pseudo:before, .arrow-next.btn--pseudo:after {
+        right: -2px;
+        top: 11px;
     }
 }
 
