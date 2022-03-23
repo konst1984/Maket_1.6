@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function mobileSliderBrands () {
 
-        if(window.innerWidth <= 767 && sliderBrands.dataset.mobile === 'false') {
+        if(window.innerWidth <= 767 ) {
             swiperBrands = new Swiper(sliderBrands, {
                 // Optional parameters
                 speed: 600,
@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         if(window.innerWidth > 767){
-            sliderBrands.dataset.mobile ="false";
+
             if(sliderBrands.classList.contains('swiper-initialized')) {
                 swiperBrands.destroy();
             }
@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function mobileSliderTypes () {
 
-        if( window.innerWidth <= 767 && sliderTypes.dataset.mobile === 'false') {
+        if( window.innerWidth <= 767 ) {
             swiperTypes = new Swiper(sliderTypes, {
                 // Optional parameters
                 speed: 600,
@@ -98,11 +98,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 freeMode: true,
             });
 
-            sliderTypes.dataset.mobile = "true" ;
+
         }
 
         if(window.innerWidth > 767){
-            sliderTypes.dataset.mobile = "false" ;
             if(sliderTypes.classList.contains('swiper-initialized')) {
                 swiperTypes.destroy();
             }
