@@ -1360,7 +1360,6 @@ input:invalid {
     .swiper-types .swiper-wrapper {
         flex-wrap: wrap;
         column-gap: 24px;
-        justify-content: center;
     }
 
     .swiper-pagination {
