@@ -1662,5 +1662,10 @@ input:invalid {
     }
 }
 
+@media (min-width: 1441px) {
+    .footer-text:nth-child(2) {
+        text-align: center;
+    }
+}
 
 
