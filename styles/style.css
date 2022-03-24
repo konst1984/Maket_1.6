@@ -995,9 +995,6 @@ input:invalid {
 
 
 /*Connect*/
-.modal--connect {
-    /*display: none;*/
-}
 
 .connect-wrapper {
     display: flex;
@@ -1394,44 +1391,12 @@ input:invalid {
 
 @media (min-width: 1120px) {
 
-    .header {
-        height: 0px;
-    }
-
-    .header__inner--left,
-    .contacts--header {
-        display: none;
-    }
-
-    .vertical-line--repair-status {
-        display: none;
-    }
-
     .hero-title {
         margin-top: 52px;
         padding-left: 32px;
         padding-bottom: 0;
         margin-bottom: 7px;
     }
-
-    .repair-status {
-        position: absolute;
-        right: 32px;
-        transform: translateY(47px);
-        gap: 30px;
-        z-index: 1;
-    }
-
-    .repair-status__box {
-        gap: 10px;
-        align-items: center;
-    }
-
-    .repair-status__text {
-        display: block;
-        letter-spacing: -0.2px;
-    }
-
 
     .nav,
     .nav__list {
@@ -1475,7 +1440,7 @@ input:invalid {
     }
 
     .hero__image-box {
-        max-height: 307px;
+        min-height: 307px;
     }
 
     .btn-more {
@@ -1487,11 +1452,6 @@ input:invalid {
         bottom: 2px;
         left: 7px;
         gap: 7px;
-    }
-
-    .hero__image {
-        min-width: 532px;
-        min-height: 307px;
     }
 
     .swiper-brands .swiper-wrapper,
@@ -1509,16 +1469,44 @@ input:invalid {
         padding-left: 306px;
     }
 
+    .header {
+        height: 0px;
+    }
+
+    .header__inner--left,
+    .contacts--header {
+        display: none;
+    }
+
+    .vertical-line--repair-status {
+        display: none;
+    }
+
     .hero-title::before {
         left: 2px;
     }
 
     .repair-status {
+        position: absolute;
         right: 44px;
+        transform: translateY(47px);
+        gap: 30px;
+        z-index: 1;
     }
 
     .repair-status__box {
         gap: 12px;
+        align-items: center;
+    }
+
+    .repair-status__text {
+        display: block;
+        letter-spacing: -0.2px;
+    }
+
+    .repair-status__text {
+        display: block;
+        letter-spacing: -0.2px;
     }
 
     .hero-content {
@@ -1531,7 +1519,7 @@ input:invalid {
     }
 
     .content-wrapper {
-        gap: 15px;
+        gap: 50px;
         margin-bottom: 36px;
     }
 
