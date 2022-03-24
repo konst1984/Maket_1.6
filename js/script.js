@@ -7,10 +7,6 @@ document.addEventListener("DOMContentLoaded", () => {
   let swiperBrands;
   let swiperTypes;
 
-
-  // let winWith = window.innerWidth;
-
-
   const swiper = new Swiper('.swiper', {
     // Optional parameters
     speed: 600,
@@ -33,16 +29,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   });
 
-
   function mobileSliderBrands () {
 
     if(window.innerWidth <= 767 ) {
       swiperBrands = new Swiper(sliderBrands, {
-        // Optional parameters
         speed: 600,
         slidesPerView: "auto",
-        slidesPerGroup: 1,
-        slideToClickedSlide: true,
         pagination: {
           el: '.swiper-pagination',
           type: 'bullets',
@@ -56,7 +48,6 @@ document.addEventListener("DOMContentLoaded", () => {
           onlyInViewport: true,
           pageUpDown: true,
         },
-        freeMode: true,
       });
 
       sliderBrands.dataset.mobile ="true";
@@ -78,7 +69,6 @@ document.addEventListener("DOMContentLoaded", () => {
         // Optional parameters
         speed: 600,
         slidesPerView: "auto",
-        // slidesPerGroup: 2,
         slideToClickedSlide: true,
         pagination: {
           el: '.swiper-pagination',
@@ -93,7 +83,7 @@ document.addEventListener("DOMContentLoaded", () => {
           onlyInViewport: true,
           pageUpDown: true,
         },
-        freeMode: true,
+
       });
 
 
