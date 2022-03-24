@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'TT Lakes';
-    src: url('/assets/fonts/TTLakes-Regular.woff') format('woff');
+    src: url('../assets/fonts/TTLakes-Regular.woff') format('woff');
     font-weight: 400;
     font-style: normal;
     font‑display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: 'TT Lakes';
-    src: url('/assets/fonts/TTLakes-Medium.woff') format('woff');
+    src: url('../assets/fonts/TTLakes-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
     font‑display: swap;
@@ -16,7 +16,7 @@
 
 @font-face {
     font-family: 'TT Lakes';
-    src: url('/assets/fonts/TTLakes-Bold.woff') format('woff');
+    src: url('../assets/fonts/TTLakes-Bold.woff') format('woff');
     font-weight: 700;
     font-style: normal;
     font‑display: swap;
@@ -24,15 +24,12 @@
 
 @font-face {
     font-family: 'TT Lakes';
-    src: url('/assets/fonts/TTLakes-DemiBold.woff') format('woff');
+    src: url('../assets/fonts/TTLakes-DemiBold.woff') format('woff');
     font-weight: 600;
     font-style: normal;
     font‑display: swap;
 }
 
-html {
-    height: 100%;
-}
 
 html, body {
     width: 100%;
@@ -341,7 +338,7 @@ button {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url("/assets/images/main__img.jpg") center center/cover no-repeat;
+    background: url("../assets/images/PictureCopy.png") center center / cover no-repeat;
 }
 
 
@@ -379,7 +376,7 @@ button {
 
 .swiper-slide {
     max-width: 260px;
-    margin-right: 0!important;
+    /* margin-right: 0!important; */
 }
 
 .grid-item--brand {

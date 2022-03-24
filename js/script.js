@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const swiper = new Swiper('.swiper', {
     // Optional parameters
     speed: 600,
+    spaceBetween: 16,
     slidesPerView: 'auto',
     slideToClickedSlide: true,
     pagination: {
@@ -39,7 +40,6 @@ document.addEventListener("DOMContentLoaded", () => {
       swiperBrands = new Swiper(sliderBrands, {
         // Optional parameters
         speed: 600,
-        spaceBetween: 16,
         slidesPerView: "auto",
         slidesPerGroup: 1,
         slideToClickedSlide: true,
@@ -77,7 +77,6 @@ document.addEventListener("DOMContentLoaded", () => {
       swiperTypes = new Swiper(sliderTypes, {
         // Optional parameters
         speed: 600,
-        spaceBetween: 16,
         slidesPerView: "auto",
         // slidesPerGroup: 2,
         slideToClickedSlide: true,
@@ -123,8 +122,6 @@ document.addEventListener("DOMContentLoaded", () => {
   let i;
 
   for (i = 0; i <  btnMoreList.length; i++) {
-    console.log(i);
-    console.log(btnMoreList[i])
     btnMoreList[i].addEventListener("click", function() {
 
       let panel = this.previousElementSibling;
