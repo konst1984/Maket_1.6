@@ -379,6 +379,7 @@ button {
 
 .swiper-slide {
     max-width: 260px;
+    margin-right: 0!important;
 }
 
 .grid-item--brand {

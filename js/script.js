@@ -14,7 +14,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const swiper = new Swiper('.swiper', {
     // Optional parameters
     speed: 600,
-    spaceBetween: 16,
     slidesPerView: 'auto',
     slideToClickedSlide: true,
     pagination: {
