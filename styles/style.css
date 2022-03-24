@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'TT Lakes';
-    src: url('./fonts/TTLakes-Regular.woff') format('woff');
+    src: url('./assets/fonts/TTLakes-Regular.woff') format('woff');
     font-weight: 400;
     font-style: normal;
     font‑display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: 'TT Lakes';
-    src: url('./fonts/TTLakes-Medium.woff') format('woff');
+    src: url('./assets/fonts/TTLakes-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
     font‑display: swap;
@@ -16,7 +16,7 @@
 
 @font-face {
     font-family: 'TT Lakes';
-    src: url('./fonts/TTLakes-Bold.woff') format('woff');
+    src: url('./assets/fonts/TTLakes-Bold.woff') format('woff');
     font-weight: 700;
     font-style: normal;
     font‑display: swap;
@@ -24,7 +24,7 @@
 
 @font-face {
     font-family: 'TT Lakes';
-    src: url('./fonts/TTLakes-DemiBold.woff') format('woff');
+    src: url('./assets/fonts/TTLakes-DemiBold.woff') format('woff');
     font-weight: 600;
     font-style: normal;
     font‑display: swap;
@@ -245,6 +245,12 @@ button {
 
 .nav__link--hero:focus {
     outline: none;
+    border: 2px solid #FF3E79;
+    background: #ffffff;
+}
+
+.nav__link--hero:hover {
+    outline: none;
     border: 2px solid #B8FFEC;
     background: #ffffff;
 }
@@ -329,7 +335,7 @@ button {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url("./images/main__img.jpg") center center/cover no-repeat;
+    background: url('/assets/images/main__img.jpg') center center/cover no-repeat;
 }
 
 

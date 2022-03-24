@@ -6,36 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="675acb44-e6ed-4a7d-95b5-bddb4826bff7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/TTLakes-Bold.woff" beforeDir="false" afterPath="$PROJECT_DIR$/assets/fonts/TTLakes-Bold.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/TTLakes-DemiBold.woff" beforeDir="false" afterPath="$PROJECT_DIR$/assets/fonts/TTLakes-DemiBold.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/TTLakes-Medium.woff" beforeDir="false" afterPath="$PROJECT_DIR$/assets/fonts/TTLakes-Medium.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/TTLakes-Regular.woff" beforeDir="false" afterPath="$PROJECT_DIR$/assets/fonts/TTLakes-Regular.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Bitmap-1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/Bitmap-1.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Bitmap-10.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/Bitmap-10.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Bitmap-2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/Bitmap-2.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Bitmap-3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/Bitmap-3.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Bitmap-4.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/Bitmap-4.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Bitmap-5.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/Bitmap-5.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Bitmap-6.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/Bitmap-6.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Bitmap-7.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/Bitmap-7.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Bitmap-8.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/Bitmap-8.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Bitmap-9.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/Bitmap-9.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Bitmap.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/Bitmap.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/burger.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/burger.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/call.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/call.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/chat.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/chat.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/checkstatus.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/checkstatus.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/close_menu.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/close_menu.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/double-arrow.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/double-arrow.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/expand-up.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/expand-up.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/expand.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/expand.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/logo.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/main__img.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/main__img.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/profile.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/profile.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/repair.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/repair.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/search.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/search.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,6 +68,7 @@
       <workItem from="1648097412298" duration="2478000" />
       <workItem from="1648103717253" duration="3260000" />
       <workItem from="1648108775512" duration="60000" />
+      <workItem from="1648109611200" duration="925000" />
     </task>
     <servers />
   </component>
