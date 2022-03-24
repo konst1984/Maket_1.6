@@ -1548,8 +1548,8 @@ input:invalid {
     }
 
     .hero__image-box {
-        height: 307px;
-        width: 530px;
+        min-height: 307px;
+        min-width: 530px;
     }
 
     .mobile-menu__header {
