@@ -118,22 +118,27 @@ document.addEventListener("DOMContentLoaded", () => {
     mobileSliderTypes();
   });
 
-
-
-
-
   const btnMoreList = document.querySelectorAll('.btn-more')
   const heroInfo = document.querySelector('.hero-info');
 
   let i;
 
   for (i = 0; i <  btnMoreList.length; i++) {
+    console.log(i);
+    console.log(btnMoreList[i])
     btnMoreList[i].addEventListener("click", function() {
+
       let panel = this.previousElementSibling;
       if (panel.clientHeight < panel.scrollHeight){
         panel.style.maxHeight = panel.scrollHeight + "px";
+        this.innerHTML='<img class="btn-more__icon" src="./assets/images/expand-up.svg" alt="Двойная вверх вниз">Скрыть';
       } else {
         panel.style.maxHeight = "160px";
+        if (i === 1) {
+          this.innerHTML = '<img class="btn-more__icon" src="./assets/images/expand.svg" alt="Двойная стрелка вниз">Читать далее';
+        } else {
+          this.innerHTML = '<img class="btn-more__icon" src="./assets/images/expand.svg" alt="Двойная стрелка вниз">Показать все';
+        }
       }
     });
   }
