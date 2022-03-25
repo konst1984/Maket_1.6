@@ -1101,8 +1101,7 @@ input:invalid {
 
     .hero__image-box {
         width: 54%;
-        right: 4px;
-        min-width: 365px;
+        min-width: 360px;
         height: auto;
         min-height: 208px;
         max-height: none;
@@ -1548,6 +1547,10 @@ input:invalid {
     .hero__image-box {
         min-height: 307px;
         min-width: 530px;
+    }
+
+    .hero__image-box::before {
+        right: 20px;
     }
 
     .mobile-menu__header {
