@@ -1,6 +1,8 @@
 "use strict"
 document.addEventListener("DOMContentLoaded", () => {
 
+  const brands = document.querySelector('.brands');
+
   const sliderBrands = document.querySelector('.swiper-brands');
   const sliderTypes = document.querySelector('.swiper-types')
 
@@ -31,9 +33,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function mobileSliderBrands () {
 
-    if(window.innerWidth <= 767 ) {
+    if(window.innerWidth <= 767 && sliderBrands.dataset.mobile === "false") {
       swiperBrands = new Swiper(sliderBrands, {
         speed: 600,
+        spaceBetween: 16,
         slidesPerView: "auto",
         pagination: {
           el: '.swiper-pagination',
@@ -54,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     if(window.innerWidth > 767){
-
+      sliderBrands.dataset.mobile ="false";
       if(sliderBrands.classList.contains('swiper-initialized')) {
         swiperBrands.destroy();
       }
@@ -64,12 +67,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function mobileSliderTypes () {
 
-    if( window.innerWidth <= 767 ) {
+    if(window.innerWidth <= 767 && sliderTypes.dataset.mobile === "false") {
       swiperTypes = new Swiper(sliderTypes, {
         // Optional parameters
         speed: 600,
+        spaceBetween: 16,
         slidesPerView: "auto",
-        slideToClickedSlide: true,
         pagination: {
           el: '.swiper-pagination',
           type: 'bullets',
@@ -83,13 +86,14 @@ document.addEventListener("DOMContentLoaded", () => {
           onlyInViewport: true,
           pageUpDown: true,
         },
-
       });
 
+      sliderTypes.dataset.mobile = "true"
 
     }
 
     if(window.innerWidth > 767){
+      sliderTypes.dataset.mobile ="false";
       if(sliderTypes.classList.contains('swiper-initialized')) {
         swiperTypes.destroy();
       }
@@ -106,6 +110,8 @@ document.addEventListener("DOMContentLoaded", () => {
     mobileSliderTypes();
   });
 
+
+
   const btnMoreList = document.querySelectorAll('.btn-more')
   const heroInfo = document.querySelector('.hero-info');
 
@@ -113,24 +119,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
   for (i = 0; i <  btnMoreList.length; i++) {
     btnMoreList[i].addEventListener("click", function() {
-
+      
       let panel = this.previousElementSibling;
       if (panel.clientHeight < panel.scrollHeight){
         panel.style.maxHeight = panel.scrollHeight + "px";
-        this.innerHTML='<img class="btn-more__icon" src="./assets/images/expand-up.svg" alt="Двойная вверх вниз">Скрыть';
       } else {
         panel.style.maxHeight = "160px";
-        if (i === 1) {
-          this.innerHTML = '<img class="btn-more__icon" src="./assets/images/expand.svg" alt="Двойная стрелка вниз">Читать далее';
-        } else {
-          this.innerHTML = '<img class="btn-more__icon" src="./assets/images/expand.svg" alt="Двойная стрелка вниз">Показать все';
-        }
       }
     });
   }
 
-
-
+  
   const btnBurger = document.querySelector('.burger');
   const mobileMenu = document.querySelector('.mobile-menu');
   const btnMenuClose = document.querySelector('.btn-close');
