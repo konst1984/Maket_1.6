@@ -115,21 +115,32 @@ document.addEventListener("DOMContentLoaded", () => {
   const btnMoreList = document.querySelectorAll('.btn-more')
   const heroInfo = document.querySelector('.hero-info');
 
+
   let i;
   for (i = 0; i <  btnMoreList.length; i++) {
-    if(i === 0 && window.innerWidth >= 1120){
+    if(i === 0 ){
       btnMoreList[i].addEventListener("click", function() {
         let panel = this.previousElementSibling;
         if (panel.clientHeight < panel.scrollHeight){
           panel.style.maxHeight = panel.scrollHeight + "px";
-          document.querySelector('.brands-wrapper--indent').style.marginTop = "0px";
           this.innerHTML = '<img class="btn-more__icon" src="./assets/images/expand-up.svg" alt="Двойная стрелка вверх">Скрыть';
-          this.style.bottom = '-10px'
+          if(window.innerWidth >= 1120){
+            document.querySelector('.content-wrapper').style.marginBottom = "30px";
+            this.style.bottom = '-10px'
+          }
         } else {
-          panel.style.maxHeight = "170px";
-          document.querySelector('.brands-wrapper--indent').style.marginTop = "110px";
           this.innerHTML = '<img class="btn-more__icon" src="./assets/images/expand.svg" alt="Двойная стрелка вниз">Читать далее';
-          this.style.bottom = '2px'
+          if(window.innerWidth >= 1120) {
+            panel.style.maxHeight = "165px";
+            document.querySelector('.content-wrapper').style.marginBotom = "14px";
+            this.style.bottom = '2px'
+          }
+          else if(window.innerWidth < 768){
+            panel.style.maxHeight = "90px";
+          }
+          else{
+            panel.style.maxHeight = "160px";
+          }
         }
       });
     }

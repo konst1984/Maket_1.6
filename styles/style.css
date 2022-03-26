@@ -323,24 +323,18 @@ button {
 }
 
 .hero__image-box {
-    position: relative;
+    height: auto;
     width: 100%;
     border-radius: 5px;
     overflow: hidden;
-    min-height: 176px;
 }
 
-.hero__image-box::before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url("../assets/images/main__img.jpg") -28% 50%/ 97% no-repeat;
+.hero__image-box > img {
+    width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
 }
-
 
 /*Brands*/
 .title--lightgrey {
@@ -1090,6 +1084,10 @@ input:invalid {
         line-height: 20px;
     }
     
+    .hero-info__text--sup {
+        margin-bottom: 20px;
+    }
+    
     .nav {
         margin-bottom: 31px;
         overflow: hidden;
@@ -1106,21 +1104,17 @@ input:invalid {
     .content-wrapper{
         width: 100%;
         position: relative;
+        margin-bottom: 85px;
     }
     
     .hero__image-box {
         position: absolute;
         top: 0;
-        right:0;
+        right:25px;
         width: 50%;
-        height: auto;
+        max-width: 531px;
         min-height: 208px;
         max-height: none;
-    }
-    
-    .hero__image-box::before {
-        right: 24px;
-        background: url(../assets/images/main__img.jpg) 37% 26%/ 100% no-repeat;
     }
     
     .hero-content {
@@ -1142,7 +1136,7 @@ input:invalid {
         height: auto;
         min-height: 208px;
         float: right;
-        padding-bottom: 10px;
+        padding-bottom: 7.5%;
     }
     
     .hero-content--padding {
@@ -1164,8 +1158,8 @@ input:invalid {
     }
     
     .btn-brand {
-        top: -3px;
-        left: 1px;
+        top: -2px;
+        left: 3px;
     }
     
     .price__table-head {
@@ -1190,7 +1184,7 @@ input:invalid {
     }
     
     .btn-service {
-        top: 4px;
+        top: 1px;
         left: 2px;
     }
     
@@ -1213,7 +1207,7 @@ input:invalid {
     
     .price__column-title {
         width: 100%;
-        padding-top: 30px;
+        padding-top: 32px;
         padding-bottom: 12px;
     }
     
@@ -1231,7 +1225,7 @@ input:invalid {
     }
     
     .price__footnote {
-        gap: 16px;
+        gap: 15px;
         padding: 0;
     }
     
@@ -1246,16 +1240,16 @@ input:invalid {
     }
     
     .wrapper-padding--price {
-        padding-left: 0px;
+        padding-left: 0;
     }
     
     .product-types__wrapper {
-        padding-bottom: 4px;
+        padding-bottom: 5px;
     }
     
     .price__table-body {
         padding-bottom: 0;
-        margin-bottom: 26px;
+        margin-bottom: 25px;
     }
     
     .btn-footnote {
@@ -1271,7 +1265,7 @@ input:invalid {
     
     .wrapper-padding--footer {
         padding-left: 22px;
-        padding-top: 66px;
+        padding-top: 68px;
         padding-right: 23px
     }
     
@@ -1402,7 +1396,6 @@ input:invalid {
     }
 }
 
-
 @media (min-width: 1120px) {
     
     
@@ -1465,7 +1458,7 @@ input:invalid {
     }
     
     .brands-wrapper--indent{
-        margin-top: 110px;
+        /*margin-top: 110px;*/
         transition: margin-top 0.5s ease-in-out;
     }
     
@@ -1476,6 +1469,16 @@ input:invalid {
     
     .card{
         max-width: 240px;
+    }
+    
+    .swiper-types {
+        margin-top: 30px;
+        margin-bottom: 22px;
+    }
+    
+    .hero-info:before {
+        padding-bottom: 10px;
+        width: 50%;
     }
     
 }
@@ -1542,7 +1545,7 @@ input:invalid {
     
     .content-wrapper {
         gap: 50px;
-        margin-bottom: 36px;
+        margin-bottom: 146px;
     }
     
     .nav__link--hero {
@@ -1563,12 +1566,9 @@ input:invalid {
     }
     
     .hero__image-box {
-        min-height: 307px;
-        min-width: 573px;
-    }
-    
-    .hero__image-box::before {
-        right: 48px;
+        max-height: 307px;
+        min-width: 574px;
+        right: 0;
     }
     
     .mobile-menu__header {
@@ -1624,6 +1624,16 @@ input:invalid {
         gap: 5px;
     }
     
+    .btn-service {
+        top: 4px;
+        left: 1px;
+    }
+    
+    .btn-brand {
+        top: -4px;
+        left: 1px;
+    }
+    
     .wrapper-padding--price{
         visibility: hidden;
     }
@@ -1633,7 +1643,7 @@ input:invalid {
     }
     
     .price__table-body {
-        padding-bottom: 7px;
+        margin-bottom: 34px;
     }
     
     .price__column-title {
@@ -1659,7 +1669,7 @@ input:invalid {
     
     .price__footnote {
         padding: 0;
-        gap: 14px;
+        gap: 15px;
     }
     
     .arrow-next {
@@ -1690,16 +1700,18 @@ input:invalid {
     .swiper-types .swiper-wrapper {
         column-gap: 32px;
     }
+    
+    .hero__image-box {
+        padding-right: 40px;
+    }
 }
 
 @media (min-width: 1441px) {
     .footer-text:nth-child(2) {
         text-align: center;
     }
-
-    .hero__image-box::before {
-        right: 24px;
-        background: url('../assets/images/main__img.jpg') center center/ cover no-repeat;
-    }
 }
 
+.clearfix {
+    clear: both;
+}
