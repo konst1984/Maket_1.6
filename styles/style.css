@@ -241,16 +241,16 @@ button {
     outline: none;
 }
 
-.nav__link--hero:active {
-    outline: none;
-    border: 2px solid #FF3E79;
-    background: #ffffff;
-}
-
 .nav__link--hero:hover,
 .nav__link--hero:focus{
     outline: none;
     border: 2px solid #B8FFEC;
+    background: #ffffff;
+}
+
+.nav__link--hero:active {
+    outline: none;
+    border: 2px solid #FF3E79;
     background: #ffffff;
 }
 
