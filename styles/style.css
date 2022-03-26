@@ -1567,8 +1567,8 @@ input:invalid {
     
     .hero__image-box {
         max-height: 307px;
-        min-width: 574px;
-        right: 0;
+        min-width: 535px;
+        right: 40px;
     }
     
     .mobile-menu__header {
@@ -1700,18 +1700,16 @@ input:invalid {
     .swiper-types .swiper-wrapper {
         column-gap: 32px;
     }
-    
-    .hero__image-box {
-        padding-right: 40px;
-    }
+
 }
 
 @media (min-width: 1441px) {
     .footer-text:nth-child(2) {
         text-align: center;
     }
+    
+    .hero-info:before {
+        width: 52%;
+    }
 }
 
-.clearfix {
-    clear: both;
-}
