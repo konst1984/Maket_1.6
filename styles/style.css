@@ -478,7 +478,7 @@ button {
 }
 
 
-.brands-wrapper-bottom,
+.brands-wrapper--bottom,
 .product-types__wrapper{
     margin-bottom: 20px;
 }
@@ -1373,7 +1373,7 @@ input:invalid {
         column-gap: 24px;
     }
 
-    .brands-wrapper-bottom, .product-types__wrapper {
+    .brands-wrapper--bottom, .product-types__wrapper {
         margin-bottom: 0px;
     }
 
