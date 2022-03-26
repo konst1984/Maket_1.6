@@ -33,6 +33,7 @@
 
 html, body {
     width: 100%;
+    height: 100vh;
     font-family: 'TT Lakes', 'Montserrat', sans-serif;
     font-weight: 400;
     background: #F8F8F8;
