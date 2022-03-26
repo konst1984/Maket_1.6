@@ -116,19 +116,39 @@ document.addEventListener("DOMContentLoaded", () => {
   const heroInfo = document.querySelector('.hero-info');
 
   let i;
-
   for (i = 0; i <  btnMoreList.length; i++) {
-    btnMoreList[i].addEventListener("click", function() {
-      
-      let panel = this.previousElementSibling;
-      if (panel.clientHeight < panel.scrollHeight){
-        panel.style.maxHeight = panel.scrollHeight + "px";
-      } else {
-        panel.style.maxHeight = "160px";
-      }
-    });
-  }
+    if(i === 0 && window.innerWidth >= 1120){
+      btnMoreList[i].addEventListener("click", function() {
+        let panel = this.previousElementSibling;
+        if (panel.clientHeight < panel.scrollHeight){
+          panel.style.maxHeight = panel.scrollHeight + "px";
+          document.querySelector('.brands-wrapper--indent').style.marginTop = "0px";
+          this.innerHTML = '<img class="btn-more__icon" src="./assets/images/expand-up.svg" alt="Двойная стрелка вверх">Скрыть';
+          this.style.bottom = '-10px'
+        } else {
+          panel.style.maxHeight = "170px";
+          document.querySelector('.brands-wrapper--indent').style.marginTop = "110px";
+          this.innerHTML = '<img class="btn-more__icon" src="./assets/images/expand.svg" alt="Двойная стрелка вниз">Читать далее';
+          this.style.bottom = '2px'
+        }
+      });
+    }
+    else{
+      btnMoreList[i].addEventListener("click", function() {
+        let panel = this.previousElementSibling;
+        console.log(panel.clientHeight);
+        console.log(panel.scrollHeight);
+        if (panel.clientHeight < panel.scrollHeight){
+          panel.style.maxHeight = panel.scrollHeight + "px";
+          this.innerHTML = '<img class="btn-more__icon" src="./assets/images/expand-up.svg" alt="Двойная стрелка вверх">Скрыть'
+        } else {
+          panel.style.maxHeight = "160px";
+          this.innerHTML = '<img class="btn-more__icon" src="./assets/images/expand.svg" alt="Двойная стрелка вниз">Показать все'
+        }
+      });
 
+    }
+  }
   
   const btnBurger = document.querySelector('.burger');
   const mobileMenu = document.querySelector('.mobile-menu');

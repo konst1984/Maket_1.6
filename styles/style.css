@@ -184,7 +184,7 @@ button {
 }
 
 .hero-title {
-
+    
     margin-top: 35px;
     padding-bottom: 34px;
 }
@@ -259,6 +259,7 @@ button {
     flex-direction: column;
     gap: 16px;
     margin-bottom: 30px;
+    padding: 0;
 }
 
 .hero-content {
@@ -287,6 +288,10 @@ button {
 .hero-info__text {
     font-size: 14px;
     line-height: 18px;
+}
+
+.hero-info__text--sup{
+    margin-bottom: 20px;
 }
 
 .btn-more {
@@ -332,7 +337,7 @@ button {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url("../assets/images/main__img.jpg") center center / cover no-repeat;
+    background: url("../assets/images/main__img.jpg") -28% 50%/ 97% no-repeat;
 }
 
 
@@ -478,7 +483,7 @@ button {
 }
 
 
-.brands-wrapper--bottom,
+.brands-wrapper-bottom,
 .product-types__wrapper{
     margin-bottom: 20px;
 }
@@ -591,7 +596,6 @@ button {
 .arrow-next:after {
     transform: translateX(-50%) rotate(45deg) translate(-3px, -2px);
 }
-
 
 .arrow-next:hover.arrow-next::before,
 .arrow-next:hover.arrow-next::after,
@@ -756,7 +760,6 @@ button {
     color: #7E7E82;
     font-weight: 500;
 }
-
 
 .mobile-menu__footer {
     flex-direction: column;
@@ -1054,26 +1057,26 @@ input:invalid {
     .header__wrapper {
         padding: 15px 26px 19px 24px;
     }
-
+    
     .logo {
         top: 3px;
         right: 6px;
     }
-
+    
     .contacts--header {
         display: flex;
         flex-direction: row;
         gap: 15px;
     }
-
+    
     .vertical-line--header-inner {
         display: block;
     }
-
+    
     .header__inner {
         gap: 20px;
     }
-
+    
     .hero-title {
         margin-top: 35px;
         padding-bottom: 27px;
@@ -1081,307 +1084,316 @@ input:invalid {
         margin-bottom: 14px;
         letter-spacing: -0.4px;
     }
-
+    
     .hero-info__text {
         line-height: 20px;
     }
-
+    
     .nav {
         margin-bottom: 31px;
         overflow: hidden;
     }
-
+    
     .nav__link {
         padding: 6px 15px;
     }
-
+    
     .nav__list .nav__item:nth-child(2) .nav__link {
         padding-right: 8px;
     }
-
+    
+    .content-wrapper{
+        width: 100%;
+        position: relative;
+    }
+    
     .hero__image-box {
-        width: 54%;
-        min-width: 360px;
+        position: absolute;
+        top: 0;
+        right:0;
+        width: 50%;
         height: auto;
         min-height: 208px;
         max-height: none;
     }
-
-    .content-wrapper {
-        flex-direction: row;
-        gap: 40px;
-        padding: 0 24px;
-        align-items: start;
-        margin-bottom: 28px;
+    
+    .hero__image-box::before {
+        right: 24px;
+        background: url(../assets/images/main__img.jpg) 37% 26%/ 100% no-repeat;
     }
-
+    
     .hero-content {
-        width: 48%;
+        display: block;
         padding: 0 0 16px 0;
-        line-height: 20px;
-        letter-spacing: -0.9px;
-        min-height: 208px;
-        max-height: none;
-        gap: 0;
+        float: left;
+        width: 100%;
     }
-
+    
+    .hero-info{
+        position: relative;
+        display: block;
+        max-height: 160px;
+    }
+    
+    .hero-info:before {
+        content: "";
+        width: 57%;
+        height: auto;
+        min-height: 208px;
+        float: right;
+        padding-bottom: 10px;
+    }
+    
     .hero-content--padding {
-        padding-left: 0;
         padding-right: 0;
     }
-
-    .hero-info {
-        padding-right: 7px;
-        width: 98%;
-        height: 100%;
-        max-height: 160px;
-        gap: 20px;
-        font-size: 14px;
-        text-align: left;
-    }
-
+    
     .wrapper-padding {
         padding-right: 22px;
-        padding-left: 24px;
+        padding-left: 23px;
     }
-
+    
     .title--lightgrey {
-        padding-top: 19px;
+        padding-top: 16px;
         margin-bottom: 5px;
     }
-
+    
     .brands__wrapper {
         padding: 0 24px;
     }
-
+    
     .btn-brand {
         top: -3px;
         left: 1px;
     }
-
+    
     .price__table-head {
         padding: 0 20px 0 16px;
         background-color: #F8F8F8;
     }
-
+    
     .price__column-title {
         flex-basis: 26.5%;
     }
-
+    
     .price__column-title:first-child {
         flex-basis: auto;
     }
-
+    
     .price__column-title:last-child {
         flex-basis: 59%;
     }
-
+    
     .swiper {
         display: none;
     }
-
+    
     .btn-service {
         top: 4px;
         left: 2px;
     }
-
+    
     .btn-more {
         gap: 7px;
         letter-spacing: -0.1px;
     }
-
+    
     .price__wrapper {
         padding-left: 25px;
         padding-right: 21px;
     }
-
+    
     .price__table-head,
     .price__table-body,
     .btn-more--brands,
     .btn-more--service {
         display: flex;
     }
-
+    
     .price__column-title {
         width: 100%;
         padding-top: 30px;
         padding-bottom: 12px;
     }
-
+    
     .price-item__text {
         width: 100%;
         padding: 25px 0 20px;
     }
-
+    
     .price-item--order {
         justify-content: space-around;
     }
-
+    
     .price-item__btn {
         padding: 0;
     }
-
+    
     .price__footnote {
         gap: 16px;
         padding: 0;
     }
-
+    
     .btn-price {
         top: 0;
     }
-
+    
     .btn-more--brands,
     .btn-more--service {
         margin-bottom: 27px;
         letter-spacing: -0.2px;
     }
-
+    
     .wrapper-padding--price {
         padding-left: 0px;
     }
-
+    
     .product-types__wrapper {
         padding-bottom: 4px;
     }
-
+    
     .price__table-body {
         padding-bottom: 0;
         margin-bottom: 26px;
     }
-
+    
     .btn-footnote {
         flex-direction: row;
         letter-spacing: -0.4px;
         gap: 4px;
     }
-
-
+    
+    
     .footer__wrapper {
         flex-direction: row;
     }
-
+    
     .wrapper-padding--footer {
         padding-left: 22px;
         padding-top: 66px;
         padding-right: 23px
     }
-
+    
     .footer-text {
         line-height: 16px;
     }
-
+    
     .footer-text:first-child {
         text-align: start;
     }
-
+    
     .footer-text:last-child {
         text-align: end;
     }
-
+    
     .modal {
         padding: 46px 32px;
         width: 440px;
         transform: translateX(550px);
     }
-
+    
     .title--modal {
         margin-bottom: 28px;
     }
-
+    
     .title--modal::before {
         left: -33px;
     }
-
+    
     .modal.hidden {
         transform: translateX(550px);
     }
-
+    
     .form--feedback {
         gap: 13px;
         padding-bottom: 20px;
     }
-
+    
     .btn-close--modal {
         top: 32px;
         left: -72px;
     }
-
+    
     .nav__link--mobile {
         padding-left: 18px;
         line-height: 36px;
     }
-
+    
     .logo--mobile {
         margin-left: 21px;
     }
-
+    
     .mobile-menu {
         padding: 14px 22px 30px 24px;
         gap: 242px;
     }
-
+    
     .mobile-menu__header {
         gap: 33px;
     }
-
+    
     .header__inner--right {
         gap: 19px
     }
-
+    
     .contacts-header {
         gap: 15px;
     }
-
+    
     .languages {
         margin-top: 33px;
     }
-
+    
     .contacts-link {
         letter-spacing: -0.2px;
     }
-
+    
     .card{
         max-width: 224px;
         margin-right: 0!important;
     }
-
+    
     .card--type {
-        padding-bottom: 17px;
+        padding: 18px 16px 15px 16px;;
     }
-
+    
     .swiper-brands {
         margin-top: 27px;
         margin-bottom: 25px;
     }
-
+    
     .swiper-types {
         margin-top: 30px;
         margin-bottom: 24px;
     }
-
+    
     .swiper-brands,
     .swiper-types {
         max-height: 160px;
         padding-bottom: 0;
         transition: all 0.5s linear;
     }
-
+    
     .swiper-brands .swiper-wrapper,
     .swiper-types .swiper-wrapper {
         flex-wrap: wrap;
         row-gap: 16px;
         column-gap: 24px;
     }
-
-    .brands-wrapper--bottom, .product-types__wrapper {
-        margin-bottom: 0px;
+    
+    .brands-wrapper--indent {
+        margin-bottom: 32px;
     }
-
+    
+    .product-types__wrapper {
+        margin-bottom: 0;
+    }
+    
     .arrow-next {
         max-width: none;
         letter-spacing: -0.4px;
     }
-
+    
     .arrow-next::before,
     .arrow-next::after {
         right: 2px;
@@ -1391,105 +1403,106 @@ input:invalid {
 
 
 @media (min-width: 1120px) {
-
+    
+    
     .hero-title {
         margin-top: 52px;
         padding-left: 32px;
         padding-bottom: 0;
         margin-bottom: 7px;
     }
-
+    
     .nav,
     .nav__list {
         margin-bottom: 0px;
         overflow: hidden;
         flex-wrap: wrap;
     }
-
+    
     .nav {
         height: auto;
         padding-top: 10px;
     }
-
+    
     .nav__list {
         padding-left: 10px;
         padding-bottom: 0;
     }
-
+    
     .nav__link--hero {
         padding: 9px 20px;
         line-height: 24px;
         letter-spacing: -0.3px;
     }
-
+    
     .hero-content {
         position: relative;
         padding: 0 0 22px 10px;
         margin: 0;
-        width: 52%;
         min-height: 208px;
         align-self: flex-start;
     }
-
+    
     .hero-info {
         padding-top: 23px;
         max-height: 180px;
     }
-
-    .content-wrapper {
-        gap: 24px;
-    }
-
-    .hero__image-box {
+    
+    .hero__image-box,
+    .hero-info:before {
         min-height: 307px;
     }
-
+    
     .btn-more {
         gap: 3px;
     }
-
+    
     .btn-more--hero {
         position: absolute;
         bottom: 2px;
-        left: 7px;
-        gap: 7px;
+        gap: 6px;
     }
-
+    
+    .brands-wrapper--indent{
+        margin-top: 110px;
+        transition: margin-top 0.5s ease-in-out;
+    }
+    
     .swiper-brands .swiper-wrapper,
     .swiper-types .swiper-wrapper {
         column-gap: 24px;
     }
-
+    
     .card{
         max-width: 240px;
     }
-
+    
 }
 
 
 @media (min-width: 1440px) {
-
+    
     body {
         padding-left: 306px;
     }
-
+    
     .header {
-        height: 0px;
+        height: 0;
     }
-
+    
     .header__inner--left,
     .contacts--header {
         display: none;
     }
-
+    
     .vertical-line--repair-status {
         display: none;
     }
-
+    
     .hero-title::before {
         left: 2px;
     }
-
+    
     .repair-status {
         position: absolute;
         right: 44px;
@@ -1497,40 +1510,44 @@ input:invalid {
         gap: 30px;
         z-index: 1;
     }
-
+    
     .repair-status__box {
         gap: 12px;
         align-items: center;
     }
-
+    
     .repair-status__text {
         display: block;
         letter-spacing: -0.2px;
     }
-
+    
     .repair-status__text {
         display: block;
         letter-spacing: -0.2px;
     }
-
+    
     .hero-content {
-        width: 48%;
+        padding-left: 0;
     }
-
+    
     .hero-info {
         padding-top: 8px;
-        max-height: 170px;
+        max-height: 170px
     }
-
+    
+    .hero-info:before {
+        width: 54%;
+    }
+    
     .content-wrapper {
         gap: 50px;
         margin-bottom: 36px;
     }
-
+    
     .nav__link--hero {
         padding: 9px 14px;
     }
-
+    
     .mobile-menu {
         width: 306px;
         padding: 27px 28px 27px 18px;
@@ -1538,131 +1555,136 @@ input:invalid {
         box-shadow: none;
         transform: translateX(0px);
     }
-
+    
     .mobile-menu__footer {
         position: sticky;
         top: 20px;
     }
-
+    
     .hero__image-box {
         min-height: 307px;
-        min-width: 530px;
+        min-width: 573px;
     }
-
+    
     .hero__image-box::before {
-        right: 20px;
+        right: 48px;
     }
-
+    
     .mobile-menu__header {
         gap: 10px;
     }
-
+    
     .btn-close--menu {
         display: none;
     }
-
+    
     .logo--mobile {
         top: 3px;
         right: 17px;
     }
-
+    
     .contacts {
         gap: 20px;
     }
-
+    
     .nav__link--mobile {
         padding-left: 14px;
         line-height: 30px;
     }
-
+    
     .wrapper-padding {
         padding-left: 32px;
     }
-
+    
     .brands__wrapper {
         padding: 0 32px;
     }
-
+    
     .price__wrapper {
         padding-left: 32px;
     }
-
+    
     .hero-title {
         padding-left: 34px;
     }
-
+    
     .title--lightgrey {
-        padding-top: 27px;
+        padding-top: 17px;
         margin-bottom: 30px;
     }
-
+    
     .card--type {
-        padding-bottom: 21px;
-        padding-top: 16px;
+        padding-bottom: 19px;
+        padding-top: 17px;
     }
-
+    
     .btn-more--brands, .btn-more--service {
-        margin-bottom: 38px;
+        margin-bottom: 48px;
         gap: 5px;
     }
-
+    
+    .wrapper-padding--price{
+        visibility: hidden;
+    }
+    
     .price__table-body, .price__table-head {
         padding-left: 23px;
     }
-
+    
     .price__table-body {
         padding-bottom: 7px;
     }
-
+    
     .price__column-title {
-        padding-top: 0;
+        padding-top: 3px;
+        flex-basis: 48.5%;
     }
-
+    
     .price__column-title:last-child {
         flex-basis: 72%;
     }
-
+    
     .price-item--period {
         flex-basis: 48.5%;
     }
-
+    
     .price-item--time {
         flex-basis: 34.5%;
     }
-
+    
     .price-item--order {
         flex-basis: 38%;
     }
-
+    
     .price__footnote {
         padding: 0;
         gap: 14px;
     }
-
+    
     .arrow-next {
         letter-spacing: -0.3px;
     }
-
+    
     .arrow-next::before, .arrow-next::after {
         right: 5px;
         top: 13px;
     }
-
+    
     .footer-text:nth-child(2) {
         text-align: start;
     }
-
+    
     .wrapper-padding--footer {
         padding-left: 30px;
         padding-right: 22px;
         padding-top: 72px;
     }
-
+    
     .footer-text:last-child {
         padding-right: 22px;
         letter-spacing: 0.2px;
     }
-
+    
     .swiper-brands .swiper-wrapper,
     .swiper-types .swiper-wrapper {
         column-gap: 32px;
@@ -1673,6 +1695,10 @@ input:invalid {
     .footer-text:nth-child(2) {
         text-align: center;
     }
-}
 
+    .hero__image-box::before {
+        right: 24px;
+        background: url('../assets/images/main__img.jpg') center center/ cover no-repeat;
+    }
+}
 
