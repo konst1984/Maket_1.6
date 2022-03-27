@@ -116,35 +116,48 @@ document.addEventListener("DOMContentLoaded", () => {
   const heroInfo = document.querySelector('.hero-info');
 
 
-  let i;
-  for (i = 0; i <  btnMoreList.length; i++) {
-    if(i === 0 ){
-      btnMoreList[i].addEventListener("click", function() {
-        let panel = this.previousElementSibling;
-        if (panel.clientHeight < panel.scrollHeight){
-          panel.style.maxHeight = panel.scrollHeight + "px";
-          this.innerHTML = '<img class="btn-more__icon" src="./assets/images/expand-up.svg" alt="Двойная стрелка вверх">Скрыть';
-          if(window.innerWidth >= 1120){
-            document.querySelector('.content-wrapper').style.marginBottom = "30px";
-            this.style.bottom = '-10px'
+  document.querySelector('.btn-more--hero').addEventListener('click', function() {
+    if (heroInfo.clientHeight < heroInfo.scrollHeight) {
+      heroInfo.style.maxHeight = document.querySelector('.hero-info').scrollHeight + "px"
+      this.innerHTML = '<img class="btn-more__icon" src="./assets/images/expand-up.svg" alt="Двойная стрелка вверх">Скрыть'
+      if(window.innerWidth > 767) {
+        setTimeout(() => {
+          heroInfo.style.overflow = "visible"
+        }, 400)
           }
-        } else {
-          this.innerHTML = '<img class="btn-more__icon" src="./assets/images/expand.svg" alt="Двойная стрелка вниз">Читать далее';
-          if(window.innerWidth >= 1120) {
-            panel.style.maxHeight = "165px";
-            document.querySelector('.content-wrapper').style.marginBotom = "14px";
-            this.style.bottom = '2px'
-          }
-          else if(window.innerWidth < 768){
-            panel.style.maxHeight = "90px";
-          }
-          else{
-            panel.style.maxHeight = "160px";
-          }
+        else{
+          setTimeout(() => {
+            heroInfo.style.overflow = "visible"
+          },500)
         }
-      });
+      }
+    else {
+      this.innerHTML = '<img class="btn-more__icon" src="./assets/images/expand.svg" alt="Двойная стрелка вниз">Читать далее'
+      if(window.innerWidth >= 1120) {
+        heroInfo.style.maxHeight = "165px";
+        setTimeout(() => {
+          heroInfo.style.overflow = "hidden"
+        },300)
+      }
+      else if(window.innerWidth < 768){
+        heroInfo.style.maxHeight = "90px";
+        setTimeout(() => {
+          heroInfo.style.overflow = "hidden"
+        },1)
+      }
+      else{
+        heroInfo.style.maxHeight = "160px";
+        setTimeout(() => {
+          heroInfo.style.overflow = "hidden"
+        },250)
+      }
+
     }
-    else{
+  })
+
+
+  let i;
+  for (i = 1; i <  btnMoreList.length; i++) {
       btnMoreList[i].addEventListener("click", function() {
         let panel = this.previousElementSibling;
         console.log(panel.clientHeight);
@@ -158,7 +171,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
 
-    }
+    // }
   }
   
   const btnBurger = document.querySelector('.burger');
@@ -209,5 +222,15 @@ document.addEventListener("DOMContentLoaded", () => {
       displayBlock(elem,'modal-transform')
     },500)
   }
+
+
+
+
+
+
+
+
+
+
 })
 
