@@ -137,7 +137,7 @@ document.addEventListener("DOMContentLoaded", () => {
         heroInfo.style.maxHeight = "165px";
         setTimeout(() => {
           heroInfo.style.overflow = "hidden"
-        },300)
+        },100)
       }
       else if(window.innerWidth < 768){
         heroInfo.style.maxHeight = "90px";
