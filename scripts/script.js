@@ -184,10 +184,14 @@ document.addEventListener("DOMContentLoaded", () => {
     return item.classList.remove(classname);
   }
 
-  btnBurger.addEventListener("click", () => displayBlock(mobileMenu, "visin"));
-  btnMenuClose.addEventListener("click", () =>
-    displayHidden(mobileMenu, "visin")
-  );
+  btnBurger.addEventListener("click", () => {
+    displayBlock(mobileMenu, "visin");
+    document.lastChild.style.overflow = "hidden";
+  });
+  btnMenuClose.addEventListener("click", () => {
+    displayHidden(mobileMenu, "visin");
+    document.lastChild.style.overflow = "auto";
+  });
 
   for (let btn of btnCall) {
     btn.addEventListener("click", () => openSection(connectSection));
@@ -217,4 +221,6 @@ document.addEventListener("DOMContentLoaded", () => {
       displayBlock(elem, "modal-transform");
     }, 500);
   }
+
+  console.dir(document.lastChild);
 });

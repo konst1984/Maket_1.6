@@ -1025,147 +1025,158 @@
           </div>
         </div>
       </section>
-      <aside class="mobile-menu flex">
-        <div class="mobile-menu__header flex">
-          <div class="mobile-menu__header-wrapper flex">
-            <button
-              class="btn btn-close btn--round btn-close--menu"
-              aria-label="Close"
-              title="Закрыть меню"
-            >
-              <img src="./assets/images/close_menu.svg" alt="Закрыть" />
-            </button>
-            <div class="logo logo--mobile">
-              <a class="logo__link" href="#"
-                ><img
-                  src="./assets/images/logo.svg"
-                  alt="Логотип CPS"
-                  title="Логотип компании"
-              /></a>
+      <aside class="mobile-menu">
+        <div class="mobile-menu__wrapper flex">
+          <div class="mobile-menu__header flex">
+            <div class="mobile-menu__header-wrapper flex">
+              <button
+                class="btn btn-close btn--round btn-close--menu"
+                aria-label="Close"
+                title="Закрыть меню"
+              >
+                <img src="./assets/images/close_menu.svg" alt="Закрыть" />
+              </button>
+              <div class="logo logo--mobile">
+                <a class="logo__link" href="#"
+                  ><img
+                    src="./assets/images/logo.svg"
+                    alt="Логотип CPS"
+                    title="Логотип компании"
+                /></a>
+              </div>
+              <button
+                class="btn btn-search btn--round"
+                aria-label="Close"
+                title="Открыть форму для обратного звонка"
+              >
+                <img src="./assets/images/search.svg" alt="Позвонить" />
+              </button>
             </div>
-            <button
-              class="btn btn-search btn--round"
-              aria-label="Close"
-              title="Открыть форму для обратного звонка"
-            >
-              <img src="./assets/images/search.svg" alt="Позвонить" />
-            </button>
+            <nav class="nav nav--mobile">
+              <ul class="nav__list nav__list--mobile">
+                <li class="nav__item nav__item--mobile flex item-pseudo">
+                  <a
+                    class="nav__link nav__link--mobile"
+                    href="#"
+                    title="Раздел сайта"
+                    >Ремонт техники</a
+                  >
+                </li>
+                <li class="nav__item nav__item--mobile flex item-pseudo">
+                  <a
+                    class="nav__link nav__link--mobile"
+                    href="#"
+                    title="Раздел сайта"
+                    >Услуги и сервисы</a
+                  >
+                </li>
+                <li class="nav__item nav__item--mobile flex item-pseudo">
+                  <a
+                    class="nav__link nav__link--mobile"
+                    href="#"
+                    title="Раздел сайта"
+                    >Корпоративным клиентам</a
+                  >
+                </li>
+                <li class="nav__item nav__item--mobile flex item-pseudo">
+                  <a
+                    class="nav__link nav__link--mobile"
+                    href="#"
+                    title="Раздел сайта"
+                    >Продавцам техники</a
+                  >
+                </li>
+                <li class="nav__item nav__item--mobile flex item-pseudo">
+                  <a
+                    class="nav__link nav__link--mobile"
+                    href="#"
+                    title="Раздел сайта"
+                    >Партнерам</a
+                  >
+                </li>
+                <li class="nav__item nav__item--mobile flex item-pseudo">
+                  <a
+                    class="nav__link nav__link--mobile"
+                    href="#"
+                    title="Раздел сайта"
+                    >Производителям</a
+                  >
+                </li>
+                <li class="nav__item nav__item--mobile flex item-pseudo">
+                  <a
+                    class="nav__link nav__link--mobile"
+                    href="#"
+                    title="Раздел сайта"
+                    >Наши сервисные центры</a
+                  >
+                </li>
+                <li class="nav__item nav__item--mobile flex item-pseudo">
+                  <a
+                    class="nav__link nav__link--mobile"
+                    href="#"
+                    title="Раздел сайта"
+                    >Контакты</a
+                  >
+                </li>
+              </ul>
+            </nav>
           </div>
-          <nav class="nav nav--mobile">
-            <ul class="nav__list nav__list--mobile">
-              <li class="nav__item nav__item--mobile flex item-pseudo">
-                <a
-                  class="nav__link nav__link--mobile"
-                  href="#"
-                  title="Раздел сайта"
-                  >Ремонт техники</a
+          <div class="mobile-menu__footer flex">
+            <div class="contacts contacts--mobile flex">
+              <div class="contacts__mobile-wrapper flex">
+                <button
+                  class="btn btn-call btn--round"
+                  type="button"
+                  title="Заказать звонок"
                 >
-              </li>
-              <li class="nav__item nav__item--mobile flex item-pseudo">
-                <a
-                  class="nav__link nav__link--mobile"
-                  href="#"
-                  title="Раздел сайта"
-                  >Услуги и сервисы</a
+                  <img src="./assets/images/call.svg" alt="Позвонить" />
+                </button>
+                <button
+                  class="btn btn-chat btn--round"
+                  type="button"
+                  title="Написать звонок"
                 >
-              </li>
-              <li class="nav__item nav__item--mobile flex item-pseudo">
-                <a
-                  class="nav__link nav__link--mobile"
-                  href="#"
-                  title="Раздел сайта"
-                  >Корпоративным клиентам</a
+                  <img src="./assets/images/chat.svg" alt="Написать в чат" />
+                </button>
+                <button
+                  class="btn btn-profile btn--round"
+                  type="button"
+                  title="Профиль клиента"
                 >
-              </li>
-              <li class="nav__item nav__item--mobile flex item-pseudo">
+                  <img
+                    src="./assets/images/profile.svg"
+                    alt="Профиль клиента"
+                  />
+                </button>
+              </div>
+              <div class="email-box">
                 <a
-                  class="nav__link nav__link--mobile"
-                  href="#"
-                  title="Раздел сайта"
-                  >Продавцам техники</a
+                  class="contacts-link contacts-link--email"
+                  href="mailto:mail@cps.com"
+                  title="Напишите нам на электронную почту"
+                  >mail@cps.com</a
                 >
-              </li>
-              <li class="nav__item nav__item--mobile flex item-pseudo">
+              </div>
+              <div class="phone-box">
                 <a
-                  class="nav__link nav__link--mobile"
-                  href="#"
-                  title="Раздел сайта"
-                  >Партнерам</a
+                  class="contacts-link contacts-link--phone"
+                  href="tel:88008908900"
+                  title="Позвонните нам"
+                  >8 8008908900</a
                 >
-              </li>
-              <li class="nav__item nav__item--mobile flex item-pseudo">
-                <a
-                  class="nav__link nav__link--mobile"
-                  href="#"
-                  title="Раздел сайта"
-                  >Производителям</a
-                >
-              </li>
-              <li class="nav__item nav__item--mobile flex item-pseudo">
-                <a
-                  class="nav__link nav__link--mobile"
-                  href="#"
-                  title="Раздел сайта"
-                  >Наши сервисные центры</a
-                >
-              </li>
-              <li class="nav__item nav__item--mobile flex item-pseudo">
-                <a
-                  class="nav__link nav__link--mobile"
-                  href="#"
-                  title="Раздел сайта"
-                  >Контакты</a
-                >
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <div class="mobile-menu__footer flex">
-          <div class="contacts contacts--mobile flex">
-            <div class="contacts__mobile-wrapper flex">
-              <button
-                class="btn btn-call btn--round"
-                type="button"
-                title="Заказать звонок"
-              >
-                <img src="./assets/images/call.svg" alt="Позвонить" />
+              </div>
+            </div>
+            <div class="languages">
+              <button class="btn languages__btn" title="Выбирете язык">
+                ru
               </button>
-              <button
-                class="btn btn-chat btn--round"
-                type="button"
-                title="Написать звонок"
-              >
-                <img src="./assets/images/chat.svg" alt="Написать в чат" />
+              <button class="btn languages__btn" title="Выбирете язык">
+                en
               </button>
-              <button
-                class="btn btn-profile btn--round"
-                type="button"
-                title="Профиль клиента"
-              >
-                <img src="./assets/images/profile.svg" alt="Профиль клиента" />
+              <button class="btn languages__btn" title="Выбирете язык">
+                ch
               </button>
             </div>
-            <div class="email-box">
-              <a
-                class="contacts-link contacts-link--email"
-                href="mailto:mail@cps.com"
-                title="Напишите нам на электронную почту"
-                >mail@cps.com</a
-              >
-            </div>
-            <div class="phone-box">
-              <a
-                class="contacts-link contacts-link--phone"
-                href="tel:88008908900"
-                title="Позвонните нам"
-                >8 8008908900</a
-              >
-            </div>
-          </div>
-          <div class="languages">
-            <button class="btn languages__btn" title="Выбирете язык">ru</button>
-            <button class="btn languages__btn" title="Выбирете язык">en</button>
-            <button class="btn languages__btn" title="Выбирете язык">ch</button>
           </div>
         </div>
       </aside>
@@ -1302,6 +1313,6 @@
       </div>
     </footer>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="scripts/script.js"></script>
   </body>
 </html>
