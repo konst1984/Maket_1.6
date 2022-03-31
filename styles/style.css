@@ -1518,11 +1518,7 @@ input:invalid {
     box-shadow: none;
     transform: translateX(0px);
   }
-
-  .mobile-menu__wrapper {
-    position: sticky;
-    top: 0;
-  }
+  
   .nav__list--mobile {
     gap: 0;
     padding-top: 0;
