@@ -222,5 +222,4 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 500);
   }
 
-  console.dir(document.lastChild);
 });
