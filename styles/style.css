@@ -1695,6 +1695,12 @@ input:invalid {
 }
 
 @media (min-width: 1441px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
   .footer-text:nth-child(2) {
     text-align: center;
   }
