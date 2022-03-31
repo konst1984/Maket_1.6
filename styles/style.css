@@ -1048,7 +1048,7 @@ input:invalid {
 
 @media (max-width: 280px) {
   .mobile-menu {
-    width: 280px;
+    width: 100%;
   }
 }
 
