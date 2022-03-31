@@ -426,12 +426,7 @@ button {
   margin: 0 auto;
   position: relative;
   overflow: hidden;
-  padding: 0;
-}
-
-.swiper-brands,
-.swiper-types {
-  padding-bottom: 40px;
+  padding: 0 0 40px 0;
 }
 
 .swiper-pagination {
