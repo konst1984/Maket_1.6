@@ -1490,11 +1490,6 @@ input:invalid {
     letter-spacing: -0.2px;
   }
 
-  .repair-status__text {
-    display: block;
-    letter-spacing: -0.2px;
-  }
-
   .hero-content {
     padding-left: 0;
   }
