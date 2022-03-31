@@ -118,10 +118,6 @@ button {
   top: 2px;
 }
 
-.repair-status {
-  gap: 15px;
-}
-
 .btn--round {
   padding: 0;
   width: 40px;
@@ -167,6 +163,7 @@ button {
 
 .repair-status {
   padding-right: 0;
+	gap: 15px;
   align-items: center;
 }
 
