@@ -193,7 +193,7 @@ button {
 .item-pseudo::before {
   content: "";
   position: absolute;
-  left: -4px;
+  left: 0;
   top: 50%;
   transform: translateY(-50%);
   display: block;
@@ -201,6 +201,10 @@ button {
   background: #41f6d7;
   border-radius: 5px;
   border: 2px solid #41f6d7;
+}
+
+.hero-title::before {
+	top: 22%;
 }
 
 .nav--hero {
@@ -738,6 +742,7 @@ button {
 
 .nav__item--mobile.item-pseudo:before {
   visibility: hidden;
+	left:6px;
 }
 
 .nav__item--mobile:focus-within.nav__item--mobile.item-pseudo:before {
@@ -1086,7 +1091,10 @@ input:invalid {
     gap: 12px;
     padding-top: 5px;
   }
-
+	
+	.nav__item--mobile.item-pseudo:before {
+		left:-4px;
+	}
   .content-wrapper {
     width: 100%;
     position: relative;
@@ -1394,7 +1402,11 @@ input:invalid {
     padding-bottom: 0;
     margin-bottom: 7px;
   }
-
+	
+	.hero-title::before {
+		top: 50%;
+	}
+	
   .nav,
   .nav__list {
     margin-bottom: 0px;
@@ -1408,10 +1420,13 @@ input:invalid {
   }
 
   .nav__list {
-    padding-left: 10px;
     padding-bottom: 0;
   }
-
+	
+	.nav__link--mobile {
+		padding-left: 28px;
+	}
+	
   .nav__link--hero {
     padding: 9px 20px;
     line-height: 24px;
@@ -1671,6 +1686,11 @@ input:invalid {
 }
 
 @media (min-width: 1441px) {
+	
+	.nav__item--mobile.item-pseudo:before {
+		left: 2px;
+	}
+	
   main {
     display: flex;
     flex-direction: column;
