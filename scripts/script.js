@@ -105,16 +105,32 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const btnMoreList = document.querySelectorAll(".btn-more");
   const heroInfo = document.querySelector(".hero-info");
-  const btnMore  = document.querySelector(".btn-more--hero")
-
 
   document.querySelector(".btn-more--hero")
     .addEventListener("click", function() {
-        let func = elementHeightControl.bind(this,heroInfo)
-        func();
+        if (heroInfo.clientHeight < heroInfo.scrollHeight) {
+          heroInfo.style.maxHeight =
+            heroInfo.scrollHeight + "px";
+          this.innerHTML =
+            '<img class="btn-more__icon" src="./assets/images/expand-up.svg" alt="Двойная стрелка вверх">Скрыть';
+          if (window.innerWidth > 767) {
+            showMaxHeight(heroInfo, 400)
+          } else {
+            showMaxHeight(heroInfo, 500)
+          }
+        } else {
+          this.innerHTML =
+            '<img class="btn-more__icon" src="./assets/images/expand.svg" alt="Двойная стрелка вниз">Читать далее';
+          if (window.innerWidth >= 1120) {
+            hideMaxHeight(heroInfo, 165, 100)
+          } else if (window.innerWidth < 768) {
+            hideMaxHeight(heroInfo, 90, 10)
+          } else {
+            hideMaxHeight(heroInfo, 160, 250)
+          }
+        }
       }
     );
-
 
   let i;
 
@@ -203,30 +219,6 @@ document.addEventListener("DOMContentLoaded", () => {
     setTimeout(() => {
       elem.style.overflow = "visible";
     }, delay);
-  }
-
-  function elementHeightControl(element) {
-    if (element.clientHeight < element.scrollHeight) {
-      element.style.maxHeight =
-        element.scrollHeight + "px";
-      this.innerHTML =
-        '<img class="btn-more__icon" src="./assets/images/expand-up.svg" alt="Двойная стрелка вверх">Скрыть';
-      if (window.innerWidth > 767) {
-        showMaxHeight(element,400)
-      } else {
-        showMaxHeight(element,500)
-      }
-    } else {
-      this.innerHTML =
-        '<img class="btn-more__icon" src="./assets/images/expand.svg" alt="Двойная стрелка вниз">Читать далее';
-      if (window.innerWidth >= 1120) {
-        hideMaxHeight(element,165,100)
-      } else if (window.innerWidth < 768) {
-        hideMaxHeight(element,90,10)
-      } else {
-        hideMaxHeight(element,160,250)
-      }
-    }
   }
 
 
