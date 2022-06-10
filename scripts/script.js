@@ -115,42 +115,28 @@ document.addEventListener("DOMContentLoaded", () => {
         this.innerHTML =
           '<img class="btn-more__icon" src="./assets/images/expand-up.svg" alt="Двойная стрелка вверх">Скрыть';
         if (window.innerWidth > 767) {
-          setTimeout(() => {
-            heroInfo.style.overflow = "visible";
-          }, 400);
+          showMaxHeight(heroInfo,400)
         } else {
-          setTimeout(() => {
-            heroInfo.style.overflow = "visible";
-          }, 500);
+          showMaxHeight(heroInfo,500)
         }
       } else {
         this.innerHTML =
           '<img class="btn-more__icon" src="./assets/images/expand.svg" alt="Двойная стрелка вниз">Читать далее';
         if (window.innerWidth >= 1120) {
-          heroInfo.style.maxHeight = "165px";
-          setTimeout(() => {
-            heroInfo.style.overflow = "hidden";
-          }, 100);
+          hideMaxHeight(heroInfo,165,100)
         } else if (window.innerWidth < 768) {
-          heroInfo.style.maxHeight = "90px";
-          setTimeout(() => {
-            heroInfo.style.overflow = "hidden";
-          }, 1);
+          hideMaxHeight(heroInfo,90,10)
         } else {
-          heroInfo.style.maxHeight = "160px";
-          setTimeout(() => {
-            heroInfo.style.overflow = "hidden";
-          }, 250);
+          hideMaxHeight(heroInfo,160,250)
         }
       }
     });
 
   let i;
+
   for (i = 1; i < btnMoreList.length; i++) {
     btnMoreList[i].addEventListener("click", function () {
       let panel = this.previousElementSibling;
-      console.log(panel.clientHeight);
-      console.log(panel.scrollHeight);
       if (panel.clientHeight < panel.scrollHeight) {
         panel.style.maxHeight = panel.scrollHeight + "px";
         this.innerHTML =
@@ -175,14 +161,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const backgroundOpacity = document.querySelector(".background-opacity");
   const connectCloseBtn = document.querySelector(".btn-close--connect");
   const connectSection = document.querySelector(".modal--connect");
-
-  function displayBlock(item, classname) {
-    return item.classList.add(classname);
-  }
-
-  function displayHidden(item, classname) {
-    return item.classList.remove(classname);
-  }
 
   btnBurger.addEventListener("click", () => {
     displayBlock(mobileMenu, "visin");
@@ -222,4 +200,24 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 500);
   }
 
+  function displayBlock(item, classname) {
+    return item.classList.add(classname);
+  }
+
+  function displayHidden(item, classname) {
+    return item.classList.remove(classname);
+  }
+
+  function hideMaxHeight(elem,heightSize, delay = 0){
+    elem.style.maxHeight = heightSize + 'px';
+    setTimeout(() => {
+      elem.style.overflow = "hidden";
+    }, delay);
+  }
+
+  function showMaxHeight(elem, delay){
+    setTimeout(() => {
+      elem.style.overflow = "visible";
+    }, delay);
+  }
 });
